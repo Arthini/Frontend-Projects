@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background: radial-gradient(rgba(48,48,48,0.95),rgba(0,0,0,0.95)),url('images/social-blog.jpg') center no-repeat;
+    background-size: cover;
+
+}
+.sociallink{
+    width: 20%;
+    filter: brightness(0.1);
+}
+.sociallink:nth-child(3){
+    transition: filter0.5s ;
+}
+.sociallink:nth-child(1),
+.sociallink:nth-child(5){
+    transition: width.5s,opacity.5s;
+}
+.sociallink img{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+}
+.fade-out{
+opacity: 0;
+width: 0;
+}
+.light{
+   filter: brightness(1.0);
+   transition: filter 1.5s;
+}
