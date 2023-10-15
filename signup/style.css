@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+html{
+    font-size: 71%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(37,7,7,0.7),rgba(0,0,0,0.7)),url(images/cardano-blockchain-platform.jpg) center no-repeat;
+    background-size: cover;
+    
+    perspective: 100rem;
+  
+}
+.form_wrapper{
+    top: calc(50% - 17.5rem);
+    left: calc(50% - 25rem);
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform .5s ,left 0.5s;
+    /* transform: rotateY(5deg); */
+   
+    
+    
+}
+.form_wrapper.change{
+    transform: rotateY(100deg);
+    left: calc(50% + 25rem);
+}
+.form_wrapper form{
+    width: 50rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1F6E8C;
+    opacity: 0.9;
+    box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset,-0.1rem -0.1rem 0.1rem  #ccc inset;
+    position: absolute;
+}
+form a{
+    text-transform: uppercase;
+    background-color: #fff;
+    letter-spacing: 0.2rem;
+    
+    top: 2rem;
+    position: absolute;
+   
+    /* margin-left: 20px; */
+    
+    font-weight: 600;
+    color:#1F6E8C;
+}
+.signup_btn{
+    left: 2rem;
+    border-radius: 100% 1rem 1rem 100%;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+
+}
+.signin_btn{
+    border-radius: 1rem 100% 100% 1rem;
+    right: 2rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+   
+}
+.sign_up{
+    transform: rotateY(270deg) translateZ(25rem)translateX(-25rem);
+}
+form h2{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.input_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.input_wrapper input{
+    height: 3rem;
+    width: 20rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+    border-radius: 2rem;
+    border: 0.2rem solid #ccc;
+    background-color: transparent;
+    outline: none;  /*when active it shows black outline*/
+    color:#fff;
+    font-weight: 500;
+    
+}
+.input_wrapper input::placeholder{
+    color:#fff;
+    font-weight: 500;
+    
+}
+.input_wrapper input[type="submit"]{
+    font-weight:900;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #1F6E8C;
+    cursor: pointer;
+}
